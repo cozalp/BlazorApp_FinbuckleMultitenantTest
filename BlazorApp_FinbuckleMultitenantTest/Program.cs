@@ -25,7 +25,7 @@ builder.Services.AddAuthentication(options =>
     .AddIdentityCookies();
 
 // add Finbuckle.MultiTenant services
-builder.Services.AddMultiTenant<TenantInfo>()
+builder.Services.AddMultiTenant<AppTenantInfo>()
     .WithHostStrategy()
     .WithConfigurationStore()
     .WithPerTenantAuthentication();
